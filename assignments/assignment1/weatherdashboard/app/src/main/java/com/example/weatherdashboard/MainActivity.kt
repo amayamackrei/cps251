@@ -142,3 +142,16 @@ fun WeatherAlertOverlay() {
 fun WeatherDashboardPreview() {
     WeatherDashboard()
 }
+
+//1: "Show me your Column usage and explain what Column does."
+//
+//2: "Point to your Row layout and explain what Row does.
+//
+//3: "Show me your Box layout and explain what Box does. What would happen if you put the
+//weather alert in the main Column instead of using a Box?"
+//
+//4: "Show me your CurrentWeatherSection function and explain what the @Composable annotation does.
+// Why is this annotation used on a function that creates part of the user interface?"
+//
+//5: Layout Combination "Explain how you combined Column, Row, and Box in your weather display.
+// Why was a Row put inside a Column, what does this layout structure accomplish?"
