@@ -166,3 +166,17 @@ data class ButtonData(
 fun InteractiveButtonGridPreview() {
     InteractiveButtonGrid()
 }
+//1. Why do we need to use remember and mutableStateOf for the selectedButtons
+// variable, and what would happen if we used a normal variable instead?
+
+//2. What advantages does FlowRow provide compared to a simple Row or Column
+// when arranging the buttons?
+
+//3. Why is it a good practice to separate the InteractiveButton into its
+// own composable instead of creating the button logic directly inside the FlowRow?
+
+//4. What is the difference between background() and border() modifiers,
+// and how do they work together to style the InteractiveButton?
+
+//5. Why is it better to group related information about a button into a data class,
+// rather than keeping that information in multiple separate lists?
