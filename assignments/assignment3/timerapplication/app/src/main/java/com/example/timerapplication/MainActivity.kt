@@ -56,11 +56,9 @@ fun StudyTimerApp() {
             isRunning = isRunning,
             onToggleTimer = {
                 if (isRunning) {
-                    // Reset: stop the timer and put the time back to the full session
                     isRunning = false
                     timeRemaining = sessionLength * 60
                 } else {
-                    // Start the countdown
                     isRunning = true
                 }
             }
@@ -85,13 +83,11 @@ fun StudyTimerApp() {
         )
     }
 
-    // Countdown timer: starts/stops whenever isRunning changes
     LaunchedEffect(isRunning) {
         while (isRunning && timeRemaining > 0) {
             delay(1000)
             timeRemaining--
         }
-        // Reached zero while still running: count the session and reset
         if (isRunning && timeRemaining == 0) {
             completedSessions++
             isRunning = false
@@ -183,3 +179,19 @@ fun SessionSettings(
 fun StudyTimerPreview() {
     StudyTimerApp()
 }
+
+//1. What are the advantages of using remember and mutableStateOf for managing state in a Compose
+// application, and how would you apply them to manage the isRunning and timeRemaining states in
+// this project?
+//
+//2. What is the difference between stateless and stateful composables, and why is it important to keep
+// TimerDisplay stateless in this project?
+//
+//3. How would you implement a countdown timer using LaunchedEffect in Compose, and what considerations
+// should you make to ensure the timer stops when it reaches zero?
+//
+//4. Why is it beneficial to separate the TimerControls and SessionSettings into their own composables,
+// and how does this improve the reusability and readability of the code?
+//
+//5. What is the role of LaunchedEffect in managing side effects in Compose, and how would you use it
+// to ensure the timer updates every second only when isRunning is true?
