@@ -301,3 +301,18 @@ data class Contact(
 fun ContactListAppPreview() {
     ContactListApp()
 }
+// 1. Why should you use LazyColumn instead of Column for the contact list, and what runtime
+// benefits does it provide for long lists?
+//
+// 2. When should you use rememberSaveable instead of remember for tracking a selected contact, and how does
+// it help preserve the selected contact during a configuration change such as screen rotation?
+//
+// 3. Explain how Modifier order (e.g., padding before vs. after background) changes layout and appearance;
+// give one practical reason this matters for the contact item card.
+//
+// 4. How would you implement multi-selection (data structure, toggle behavior, and UI affordances such as
+// a selection count and bulk actions)?
+//
+// 5. Show me how selection state flows through your app. Point to where a contact is clicked, then trace how
+// that changes the selectedContact state, and finally how it updates the UI colors and selection indicator.
+// What would break if you moved the state variable to a different function?
