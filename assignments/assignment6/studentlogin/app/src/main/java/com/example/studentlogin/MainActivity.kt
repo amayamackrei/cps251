@@ -526,7 +526,9 @@ fun ProfileScreenPreview() {
 // application.
 //
 //2. The LoginApp defines routes like "welcome/{userName}" and "profile/{userName}". Explain the
-// mechanism used to pass the userName data from the LoginScreen to WelcomeScreen and ProfileScreen. Specifically, reference how arguments are defined in the route pattern and retrieved in the target composable as discussed in the "Passing Arguments" lesson.
+// mechanism used to pass the userName data from the LoginScreen to WelcomeScreen and ProfileScreen.
+// Specifically, reference how arguments are defined in the route pattern and retrieved in the target
+// composable as discussed in the "Passing Arguments" lesson.
 //
 //3. The solution you are to create breaks down the UI into LoginScreen, WelcomeScreen, and
 // ProfileScreen. Discuss the advantages of organizing UI into distinct composable functions
