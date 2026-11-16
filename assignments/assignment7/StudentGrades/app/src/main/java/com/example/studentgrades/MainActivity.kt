@@ -315,7 +315,7 @@ fun StudentRow(
             .fillMaxWidth()
             .padding(vertical = 4.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = Alignment.CenterVertically
+        verticalAlignment = Alignment.CenterVerticallyAmA
     ) {
         Column(modifier = Modifier.weight(1f)) {
             // TODO: Add a Text composable to display student.name
